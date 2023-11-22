@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estadiahoteis.component.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="row">
+          <div class="col-6 border border-light rounded p-5 shadow" *ngIf="formularioEstadiaHotel">
+            <h6>{{ tituloFormulario }}</h6>
+            <form [formGroup]="formularioEstadiaHotel" (ngSubmit)="enviarFormulario()">
+              <div class="form-group">
+                <label>Quantidade de Quartos</label>
+                <input type="number" class="form-control form-control-sm" formControlName="QtdQuartos" />
+              </div>
+              <div class="form-group">
+                <label>Data de Entrada</label>
+                <input type="date" class="form-control form-control-sm" formControlName="DataEntrada" />
+              </div>
+              <div class="form-group">
+                <label>Data de Saída</label>
+                <input type="date" class="form-control form-control-sm" formControlName="DataSaida" />
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div>
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">Salvar</button>
+                  </div>
+                  <div class="pl-1">
+                    <a href="/"><button type="button" class="btn btn-sm btn-light">Voltar</button></a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

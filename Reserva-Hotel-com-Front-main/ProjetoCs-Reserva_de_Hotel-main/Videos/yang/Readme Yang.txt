@@ -1,0 +1,4 @@
+	Eu fui responsável pelas partes de fazer as model e controller de Estadia e Reserva.
+Vale notar que Estadia é o que se tem de fazer pro hóspede pegar um quarto quarto, como saber quando entrou e saiu, a quantidade de quartos que ele vai pegar e o id dessa estadia. Já em Reserva é como o próprio nome indica, o hóspede fazer uma reserva que é o objetivo do nosso trabalho. Ele vai possuir os atributos que o tornam possível fazer isso que são: idReserva que serve pra indicar qual é a reserva feita pelo hóspede, o nome da pessoa que está fazendo, o pagamento feito por ela e a classe referenciada Estadia que puxa os atributos dela.
+	Nas controllers eu vou fazer os métodos para fazer os CRUD possíveis, como cadastrar, listar, buscar por id e deletar um hóspede dentro da API Swagger.
+Vale ressaltar que as entityFramework e algumas dependências estavam dando erro no meu notebook, logo, eu fiz boa parte na universidade e com os colegas de trabalho.
